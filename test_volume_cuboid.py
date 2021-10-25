@@ -7,3 +7,6 @@ class TestCuboid(unittest.TestCase):
         self.assertAlmostEqual(cuboid_volume(1),1)
         self.assertAlmostEqual(cuboid_volume(0),0)
         self.assertAlmostEqual(cuboid_volume(5.5),166.375)
+        
+    def test_input_value(self):
+        self.assertRaises(TypeError, cuboid_volume, True)     
